@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-  mongoose.connect("mongodb://dbUser:Test123@ac-b0xqq5h-shard-00-00.1wana2q.mongodb.net:27017,ac-b0xqq5h-shard-00-01.1wana2q.mongodb.net:27017,ac-b0xqq5h-shard-00-02.1wana2q.mongodb.net:27017/blogDB?ssl=true&replicaSet=atlas-106sq5-shard-0&authSource=admin&retryWrites=true&w=majority");
+  mongoose.connect("mongodb://dbUser:XXXXXX@ac-b0xqq5h-shard-00-00.1wana2q.mongodb.net:27017,ac-b0xqq5h-shard-00-01.1wana2q.mongodb.net:27017,ac-b0xqq5h-shard-00-02.1wana2q.mongodb.net:27017/blogDB?ssl=true&replicaSet=atlas-106sq5-shard-0&authSource=admin&retryWrites=true&w=majority");
 
 const postSchema = new mongoose.Schema({
     postTitle: {
